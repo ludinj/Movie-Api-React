@@ -41,7 +41,6 @@ const Home = () => {
           text={state.results[0].overview}
         />
       ) : null}
-
       <SearchBar setSearchTearm={setSearchTearm} />
       <Grid header={searchTerm ? "Search results" : "Populars Movies"}>
         {state.results.map((movie) => (
